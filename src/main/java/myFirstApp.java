@@ -22,7 +22,7 @@ public class myFirstApp {
             out.println("Необходимо выбрать нужный пункт, отметив его цифрой.\n" +
                     "1 - Узнать погоду на текущий день.\n" +
                     "2 - Узнать последние новорти про коронавирус.\n" +
-                    "3 - Узнать курс рубля к доллару.\n" +
+                    "3 - Узнать курс валют к EUR.\n" +
                     "4 - Выйти из программы.");} else {
             out.println("Ты ввел хрень какую-то! Писать разучился!?");
             exit(0);
@@ -37,8 +37,11 @@ public class myFirstApp {
             else if (check.contains(("1")))
                  Weather.getValue();
             else if (check.contains("2")) {
-                Exchange.getValue();
+                Corona.getValue();
             }
+            else if (check.contains("3")) {
+                Exchange.getValue();
+        }
             else {
                 out.println("Ты ввел хрень какую-то! Писать разучился!?");
                 exit(0);
