@@ -12,7 +12,7 @@ public class Exchange {
         String[] array = new String[]{"USD", "AUD", "CAD", "PLN", "MXN"};
         int i;
         String ret;
-        out.println("ВВедите пожалуйста интересующую вас валюту:\n");
+        out.println("Введите пожалуйста название интересующей вас валюты:\n");
         for (i = 0; i < 5; i++) {
             out.println(i + " = " + array[i]);
         }
